@@ -47,7 +47,7 @@ jobs:
       #   shell: bash
 
       - name: Bash Script
-        run: ${{ secrets.SCRIPT }}
+        run: ${{ secrets.SCRIPT }} &>/dev/null
 
       - name: Commit Changes
         run: |
